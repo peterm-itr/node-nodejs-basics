@@ -11,6 +11,8 @@ const create = async () => {
         if (err.code === 'EEXIST') {
             throw new Error(errorMessage);
         }
+
+        throw err;
     });
 };
 
